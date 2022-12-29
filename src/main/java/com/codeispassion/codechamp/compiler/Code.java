@@ -9,17 +9,14 @@ public class Code {
     private String id;
     private LanguageType languageType;
     private String codeBody;
-    private String compileResult;
 
     public Code() {
-        this.compileResult = "Dummy Compile Result";
     }
 
-    public Code(String id, LanguageType languageType, String codeBody, String compileResult) {
+    public Code(String id, LanguageType languageType, String codeBody) {
         this.id = id;
         this.languageType = languageType;
         this.codeBody = codeBody;
-        this.compileResult = compileResult;
     }
 
     public String getId() {
@@ -44,14 +41,6 @@ public class Code {
 
     public void setCodeBody(String codeBody) {
         this.codeBody = codeBody;
-    }
-
-    public String getCompileResult() {
-        return compileResult;
-    }
-
-    public void setCompileResult(String compileResult) {
-        this.compileResult = compileResult;
     }
 
 }
