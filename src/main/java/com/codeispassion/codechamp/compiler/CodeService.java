@@ -21,12 +21,14 @@ public class CodeService {
                 response = compilePython(code.getCodeBody());
                 break;
             case CPP:
+            case C:
                 response = compileCpp(code.getCodeBody());
                 break;
             case JAVA:
                 response = compileJava(code.getCodeBody());
                 break;
             case JS:
+            case JAVASCRIPT:
                 response = compileJs(code.getCodeBody());
                 break;
             default:
