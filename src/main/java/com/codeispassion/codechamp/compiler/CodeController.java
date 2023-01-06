@@ -1,6 +1,7 @@
 package com.codeispassion.codechamp.compiler;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -38,5 +39,10 @@ public class CodeController {
     @GetMapping("/code")
     public Code getDefaultCode() {
         return new Code("test1", LanguageType.PYTHON, "print('hello')");
+    }
+
+    @GetMapping("/responses/all")
+    public List<CodeResponse> getAllCodeResponses() {
+        return codeService.getAllCodeResponses();
     }
 }
