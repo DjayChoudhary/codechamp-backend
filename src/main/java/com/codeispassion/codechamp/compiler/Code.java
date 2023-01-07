@@ -10,6 +10,7 @@ public class Code {
     private String id;
     private LanguageType languageType;
     private String codeBody;
+    private String input;
 
     public Code() {
     }
